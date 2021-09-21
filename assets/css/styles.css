@@ -477,7 +477,7 @@ img {
 
 .skills__titles {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   margin-bottom: var(--mb-0-5);
 }
 
