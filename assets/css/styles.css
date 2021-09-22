@@ -471,6 +471,8 @@ img {
 }
 
 .skills__list {
+  grid-template-columns: auto;
+  column-gap: 0ch;
   row-gap: 1.5rem;
   padding-left: 2.7rem;
 }
@@ -557,6 +559,25 @@ img {
 
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
+}
+
+.skills__name {
+  display: inline-block;
+  font-size: var(--font-medium);
+
+  color: white;
+
+  background-color: var(--first-color);
+  border-radius: 100px;
+
+  padding: 0.3em 1.2em;
+  margin: 5px;
+
+  /* background-size: 200% 100%; */
+}
+
+.skills__name:hover {
+  background-color: var(--first-color-alt);
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -1082,13 +1103,17 @@ img {
     justify-self: center;
   }
   .about__container,
-  .skills__container,
   .portfolio__content,
   .project__container,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* .skills__container {
+    grid-template-columns: 1fr;
+  } */
+
   .qualification__sections {
     display: grid;
     grid-template-columns: 0.6fr;
